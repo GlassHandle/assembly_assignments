@@ -1,0 +1,4 @@
+MOV ah,0xAB
+mov bh,0x5C
+and ah,bh
+hlt

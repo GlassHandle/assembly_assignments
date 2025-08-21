@@ -1,0 +1,4 @@
+MOV ax,0x1234
+mov bx,0x5678
+MUL bx
+hlt
