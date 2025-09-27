@@ -1,0 +1,12 @@
+Instruction stream byte queue: 6-byte queue that continuously fetches instructions from memory up to 6 bytes ahead of the instruction currently being executed by the execution unit.
+Bus Interface Unit (BIU): Its function is to fetch instructions and data from memory and write results to memory or i/o ports.
+airthmetic logic unit (ALU) : It performs all the logical and airthmetic operations on data.
+Execution unit (EU) : It is where all the processing takes place. it is responsible for fetching and executing instructions fetched by the BIU. The EU works with the BIU by requesting instructions from the instruction queue and operands from memory.
+Registers: A register is a small, fast memory location within a microprocessor. it holds data and instructions that the cpu needs to access and process quickly. they are the fastest form of computer memocry hierarchy.
+Control logic: It decdoes the instructions received from the instruction queue and generates the necessary timing and control signals to execute the instruction. it controls the flow of data between the internal components and manages the operation of the alu and registers.
+
+
+Buses:
+A-bus:Acts as a source for one of the operands to the ALU.
+B-bus: Acts as a source for the second operand to the ALU.
+C-bus: Carries the result from the ALU back to the destination register.

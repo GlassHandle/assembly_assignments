@@ -1,0 +1,25 @@
+Status flags:
+    carry flag: 1 if there is a carry out of the most significant bit during addition or a borrow during subtraction
+    parity flag: 1 if the number of set bits is even
+    zero flag: 1 if the result is 0
+    sign flag: 1 if the most significant bit is 1 otherwise 0
+    auxiliary carry flag: 1 if there is a carry from the 3rd to 4th bit
+    overflow flag: 1 if the result of a signed operation is too large to fit in the destination register leading to an incorrect sign
+
+Control flags:
+    trap flag: used for single-stepping through a program for debugging.
+    interrupt flag: controls wheather the cpu will respond to maskable interrupts
+    Direction flag: determines the direction of stirnsg operation
+
+    ex- addtion of 1001 1010 and 11001101
+
+    1 0 0 1 1 0 1 0
+    1 1 0 0 1 1 0 1
+    ----------------
+  1 0 1 1 0 0 1 1 1
+
+  CF=1 (THERE IS A CARRY OUT IN MOST SIGNIFICANT BIT)
+  PF=0 (odd number of bits(5) in AL)
+  ZF=0 (the result is non zero)
+  SF=0 (most significant bit value)
+  OF=1 (the sign changes cause of carry flag)
