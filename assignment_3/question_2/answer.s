@@ -5,7 +5,7 @@ my_array:
 .text
 .global _start
 _start:
-	@mov SP,#0x1000
+	mov SP,#0x1000
 	ldr r0,=my_array
 	mov r1,#0
 	mov r2,#5
